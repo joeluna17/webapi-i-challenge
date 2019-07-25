@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+
+
+.user-list-container{
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 2%;
+}
+
+.user-wrapper{
+  width:300px;
+  height:200px;
+  margin: 1%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
