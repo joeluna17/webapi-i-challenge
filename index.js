@@ -1,8 +1,10 @@
 // implement your API here
 const express = require('express');
 const server = express();
+const cors = require('cors')
 const db = require('./data/db.js');
-server.use(express.json())
+server.use(express.json()); // Parses all data to jason from a request response
+server.use(cors()); 
 
 
 server.get('/', (req,res)=>{
@@ -90,6 +92,8 @@ server.delete('/api/users/:id', (req, res) => {
         res.status(500).json({success: false, error: "The user could not be removed"})
     })
 })
+
+
 
 
 
